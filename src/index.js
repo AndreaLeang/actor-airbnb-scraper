@@ -58,7 +58,13 @@ Apify.main(async () => {
         log.setLevel(log.LEVELS.DEBUG);
     }
 
-    const proxy = await Apify.createProxyConfiguration(proxyConfiguration);
+    // const proxy = await Apify.createProxyConfiguration(proxyConfiguration);
+    const proxy = await Apify.createProxyConfiguration({
+        groups: ['GROUP1', 'GROUP2'] // List of Apify proxy groups
+        countryCode: 'US'
+    });
+
+    
     if (Apify.isAtHome() && !proxy) {
         throw new Error('WRONG INPUT: This actor must use Apify proxy or custom proxies when running on Apify platform!');
     }
