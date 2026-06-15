@@ -1,5 +1,5 @@
 const Apify = require('apify');
-const turf = require('@turf/turf');
+const turf = await import('@turf/turf');
 
 const { DISTANCE_METERS } = require('./constants');
 
