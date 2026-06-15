@@ -11,6 +11,9 @@
 		"lodash.get": "^4.4.2",
 		"moment": "^2.29.3"
 	},
+	"overrides": {
+	  "concaveman": "1.1.1"
+	},
 	"devDependencies": {
 		"@apify/eslint-config": "^0.1.2",
 		"@types/lodash.get": "^4.4.6",
@@ -24,7 +27,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/dtrungtin/actor-airbnb-scraper"
+		"url": "https://github.com/akleang/actor-airbnb-scraper"
 	},
 	"author": "",
 	"license": "ISC",
